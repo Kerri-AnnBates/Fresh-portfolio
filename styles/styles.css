@@ -90,7 +90,7 @@ header {
     background-color: rgba(60, 149, 168, 0.7);
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     padding: 1rem 0;
 }
 
@@ -156,13 +156,17 @@ header {
     margin-bottom: 1rem;
 }
 
-.bio-img {
-    width: 100%;
+.img-container {
     overflow: hidden;
 }
 
-.bio-img img {
+.img-container img {
     width: 100%;
+}
+
+.bio-content {
+    display: flex;
+    flex-direction: column;
 }
 
 /************ Media Querries ***************/
@@ -176,24 +180,28 @@ header {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
     .bio {
         height: 400px;
     }
-    .bio-details {
-        width: 45%;
-    }
     .bio-img {
+        background-image: linear-gradient(rgba(60, 149, 168, 0.6), rgba(60, 149, 168, 0.6)), url('../img/bio-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 80%;
         position: absolute;
         top: 0;
         bottom: 0;
         right: 0;
     }
-    .bio-details {
+    .bio-details, .img-container {
         z-index: 1;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        width: 50%;
+    }
+    .bio-content {
+        flex-direction: row;
+    }
+    .bio-details {
+        margin-bottom: 0;
     }
 }
