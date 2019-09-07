@@ -83,28 +83,53 @@ nav {
 /* Header */
 
 header {
-    background-color: rgba(60, 149, 168, 0.7);
+    /* background-color: rgba(60, 149, 168, 0.7); */
     position: fixed;
     width: 100%;
     z-index: 1;
     padding: 1rem 0;
 }
 
-.intro {
-    position: relative;
-}
-
 .hero-image {
-    position:relative;
     min-height: 100vh;
     background-color: #3C95A8;
-    background-image: url('../img/intro-comp1.jpg');
+    background: linear-gradient(rgba(60, 149, 168, 0.6), rgba(60, 149, 168, 0.6)), url('../img/intro-comp1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 
-.overlay {
-    background-color: rgba(60, 149, 168, 0.7);
-    position: absolute;
+.heading-main {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.heading-medium {
+    font-size: 2rem;
+}
+
+.heading-small {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.intro-block .heading-small {
+    background-color: #FFA46B;
+    padding: 0.3125rem 1rem;
+}
+
+.intro-block {
+    max-width: 60rem;
+}
+
+/************ Media Querries ***************/
+
+@media screen and (min-width: 550px) {
+    .heading-main {
+        font-size: 6rem;
+    }
 }
