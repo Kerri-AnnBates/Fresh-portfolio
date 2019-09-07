@@ -63,6 +63,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    line-height: 1.5rem;
+}
+
 /* Nav */
 
 nav {
@@ -83,7 +87,7 @@ nav {
 /* Header */
 
 header {
-    /* background-color: rgba(60, 149, 168, 0.7); */
+    background-color: rgba(60, 149, 168, 0.7);
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -92,6 +96,7 @@ header {
 
 .hero-image {
     min-height: 100vh;
+    /* min-height: 100%; */
     background-color: #3C95A8;
     background: linear-gradient(rgba(60, 149, 168, 0.6), rgba(60, 149, 168, 0.6)), url('../img/intro-comp1.jpg');
     background-position: center;
@@ -105,10 +110,15 @@ header {
     font-size: 2.5rem;
     font-weight: 600;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .heading-medium {
     font-size: 2rem;
+    border-bottom: 5px solid;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 0.6rem;
 }
 
 .heading-small {
@@ -119,17 +129,71 @@ header {
 
 .intro-block .heading-small {
     background-color: #FFA46B;
-    padding: 0.3125rem 1rem;
+    padding: 0.9rem 1rem;
 }
 
 .intro-block {
     max-width: 60rem;
 }
 
+/* Bio section */
+
+.bio {
+    background-image: url('../img/screen-2.png');
+    padding: 5rem 0;
+    position: relative;
+}
+
+.bio-details {
+    background-color: #FFA46B;
+    padding: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.bio-details h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.bio-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.bio-img img {
+    width: 100%;
+}
+
 /************ Media Querries ***************/
 
 @media screen and (min-width: 550px) {
+    .container {
+        width: 85%;
+    }
     .heading-main {
         font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .bio {
+        height: 400px;
+    }
+    .bio-details {
+        width: 45%;
+    }
+    .bio-img {
+        width: 80%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .bio-details {
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
