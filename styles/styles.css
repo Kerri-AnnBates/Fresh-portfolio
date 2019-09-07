@@ -169,9 +169,7 @@ header {
     flex-direction: column;
 }
 
-/* Skills */
-
-.skills {
+.skills, .projects {
     padding: 4rem 0;
 }
 
@@ -197,8 +195,23 @@ header {
     margin-top: 2rem;
 }
 
-.stack-content {
+.stack-content, .project-content {
     display: flex;
+}
+
+/* Projects */
+
+.projects {
+    background-color: #FFA46B;
+}
+
+.projects h3 {
+    color: #fff;
+    border-color: #3C95A8;
+}
+
+.project-content .stack-details p {
+    color: #fff;
 }
 
 /************ Media Querries ***************/
@@ -213,7 +226,7 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
-    .bio, .skills {
+    .bio, .skills, .projects {
         padding: 10rem 0;
     }
     .bio-img {
@@ -236,8 +249,7 @@ header {
     .bio-details {
         margin-bottom: 0;
     }
-    /* Skills */
-    .skills-container {
+    .skills-container, .projects-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -249,15 +261,15 @@ header {
     .section-heading {
         width: 30%;
     }
-    .skills-stack {
+    .skills-stack, .projects-stack {
         width: 45%;
         margin-top: 0;
         margin-bottom: 2rem;
     }
-    .stack-content {
+    .stack-content, .project-content {
         margin-bottom: 6rem;
     }
-    .stack-content:last-of-type {
+    .stack-content:last-of-type, .project-content:last-of-type {
         margin-bottom: 0;
     }
 }
