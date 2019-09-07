@@ -169,6 +169,37 @@ header {
     flex-direction: column;
 }
 
+/* Skills */
+.skills {
+    padding: 4rem 0;
+}
+
+.skills h3 {
+    color: #FFA46B;
+    border-color: #3C95A8;
+}
+
+.stack-details p, .illustration {
+    color: #3C95A8;
+}
+
+.stack-details {
+    padding: 0.9rem;
+    padding-top: 0;
+}
+
+.illustration {
+    font-size: 4rem;
+}
+
+.skills-stack {
+    margin-top: 2rem;
+}
+
+.stack-content {
+    display: flex;
+}
+
 /************ Media Querries ***************/
 
 @media screen and (min-width: 550px) {
