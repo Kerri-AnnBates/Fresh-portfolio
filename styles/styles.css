@@ -170,6 +170,7 @@ header {
 }
 
 /* Skills */
+
 .skills {
     padding: 4rem 0;
 }
@@ -212,8 +213,8 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
-    .bio {
-        height: 400px;
+    .bio, .skills {
+        padding: 10rem 0;
     }
     .bio-img {
         background-image: linear-gradient(rgba(60, 149, 168, 0.6), rgba(60, 149, 168, 0.6)), url('../img/bio-bg.jpg');
@@ -233,6 +234,30 @@ header {
         flex-direction: row;
     }
     .bio-details {
+        margin-bottom: 0;
+    }
+    /* Skills */
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .illustration {
+        width: 50%;
+        text-align: center;
+    }
+    .section-heading {
+        width: 30%;
+    }
+    .skills-stack {
+        width: 45%;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    .stack-content {
+        margin-bottom: 6rem;
+    }
+    .stack-content:last-of-type {
         margin-bottom: 0;
     }
 }
