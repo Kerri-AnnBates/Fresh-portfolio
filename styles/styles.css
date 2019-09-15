@@ -48,9 +48,13 @@ text blue: #3C95A8 or rgb(60,149,168);
 
 */
 
+html {
+    font-size: 62.50%;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .container {
@@ -64,7 +68,12 @@ a {
 }
 
 p {
-    line-height: 1.5rem;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
 }
 
 /* Nav */
@@ -76,7 +85,7 @@ nav {
 
 .nav_link {
     color: #fff;
-    font-size: 0.875rem;
+    font-size: 1.6rem;
 }
 
 .main-nav {
@@ -114,7 +123,7 @@ header {
 }
 
 .heading-medium {
-    font-size: 2rem;
+    font-size: 3rem;
     border-bottom: 5px solid;
     text-transform: uppercase;
     font-weight: 600;
@@ -122,7 +131,7 @@ header {
 }
 
 .heading-small {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 300;
     color: #fff;
 }
@@ -169,7 +178,7 @@ header {
     flex-direction: column;
 }
 
-.skills, .projects {
+.skills, .projects, .contact {
     padding: 4rem 0;
 }
 
@@ -191,10 +200,6 @@ header {
     font-size: 4rem;
 }
 
-.skills-stack {
-    margin-top: 2rem;
-}
-
 .stack-content, .project-content {
     display: flex;
 }
@@ -214,6 +219,21 @@ header {
     color: #fff;
 }
 
+/* Contact */
+
+.contact {
+    background-color: #3C95A8;
+}
+
+.contact h3 {
+    color: #fff;
+    border-color: #fff;
+}
+
+.contact-details {
+    background-color: #FFA46B;
+}
+
 /************ Media Querries ***************/
 
 @media screen and (min-width: 550px) {
@@ -226,6 +246,9 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+    .section-heading {
+        margin-bottom: 0;
+    }
     .bio, .skills, .projects {
         padding: 10rem 0;
     }
