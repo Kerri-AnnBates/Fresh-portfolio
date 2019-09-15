@@ -223,15 +223,19 @@ header {
 
 .contact {
     background-color: #3C95A8;
+    position: relative;
 }
 
 .contact h3 {
-    color: #fff;
+    /* color: #fff; */
+    margin-bottom: 2rem;
     border-color: #fff;
 }
 
 .contact-details {
     background-color: #FFA46B;
+    color: #fff;
+    padding: 2rem;
 }
 
 /************ Media Querries ***************/
