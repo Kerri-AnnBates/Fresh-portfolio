@@ -235,7 +235,7 @@ header {
 .contact-details {
     background-color: #FFA46B;
     color: #fff;
-    padding: 2rem;
+    padding: 4rem 2rem;
 }
 
 .contact-group {
@@ -268,6 +268,7 @@ header {
         background-image: linear-gradient(rgba(60, 149, 168, 0.6), rgba(60, 149, 168, 0.6)), url('../img/bio-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         width: 80%;
         position: absolute;
         top: 0;
@@ -306,5 +307,25 @@ header {
     }
     .stack-content:last-of-type, .project-content:last-of-type {
         margin-bottom: 0;
+    }
+    .contact {
+        padding: 6rem 0;
+    } 
+    .contact-bg {
+        background-image: url('../img/contact-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .contact-content {
+        position: relative;
+        width: 55%;
+        left: 45%;
+        text-align: right;
     }
 }
