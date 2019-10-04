@@ -194,6 +194,7 @@ header {
 .stack-details {
     padding: 0.9rem;
     padding-top: 0;
+    margin-top: 20px;
 }
 
 .illustration {
@@ -202,6 +203,7 @@ header {
 
 .stack-content, .project-content {
     display: flex;
+    margin-bottom: 2rem;
 }
 
 /* Projects */
@@ -219,6 +221,14 @@ header {
     color: #fff;
 }
 
+.project-img img {
+    width: 300px;
+}
+
+.project-content {
+    flex-direction: column;
+    align-items: center;
+}
 /* Contact */
 
 .contact {
@@ -310,7 +320,7 @@ header {
     }
     .contact {
         padding: 6rem 0;
-    } 
+    }
     .contact-bg {
         background-image: url('../img/contact-bg.jpg');
         background-repeat: no-repeat;

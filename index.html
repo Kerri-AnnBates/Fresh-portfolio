@@ -16,10 +16,10 @@
         <div class="container">
             <nav>
                 <ul class="main-nav">
-                    <li><a class="nav_link" href="#">About</a></li>
-                    <li><a class="nav_link" href="#">Skills</a></li>
-                    <li><a class="nav_link" href="#">Projects</a></li>
-                    <li><a class="nav_link" href="#">Contact</a></li>
+                    <li><a class="nav_link" href="#about">About</a></li>
+                    <li><a class="nav_link" href="#skills">Skills</a></li>
+                    <li><a class="nav_link" href="#projects">Projects</a></li>
+                    <li><a class="nav_link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,12 +34,12 @@
             </div>
         </div>
     </section>
-    <section class="bio">
+    <section class="bio" id="about">
         <div class="container">
             <div class="bio-content">
                 <div class="bio-details">
-                    <h3 class="heading-medium">All About Me</h3>
-                    <p>Try carrot cake. Jelly-o sesame snaps cake chupa chups macaroon carrot cake jelly-o icing. Cheesecake dessert liquorice cake cake tiramisu chocolate. Gummi bears candy canes cupcake. Apple pie sweet roll macaroon chocolate.</p>
+                    <h3 class="heading-medium">About Me</h3>
+                    <p>I'm am currently a junior web developer working to improving and expanding my knowledge in full-stack devlopment. One thing that gets me excited with coding is having the skills to build something that can make a difference for people. I enjoy learning and building upon the skills that I already have. When I'm not coding, I enjoy playing sports, and hanging out with friends and family.</p>
                 </div>
                 <div class="img-container">
                     <img src="img/portfolio-me2.jpg" alt="Photo of Kerri-Ann hicking.">
@@ -49,7 +49,7 @@
         </div>
     </section>
     <!-- Skills -->
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <div class="skills-container">
                 <div class="section-heading">
@@ -60,18 +60,19 @@
                         <div class="illustration"><i class="fas fa-laptop-code"></i></div>
                         <div class="stack-details">
                             <h3 class="heading-small">Front-end Stack</h3>
-                            <p>Cheesecake dessert liquorice cake cake tiramisu chocolate. Gummi bears candy canes cupcake. Apple pie
-                                sweet roll
-                                macaroon chocolate.</p>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                                <li>LESS</li>
+                                <li>Javascript</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="stack-content">
                         <div class="illustration"><i class="fas fa-server"></i></div>
                         <div class="stack-details">
                             <h3 class="heading-small">Back-end Stack</h3>
-                            <p>Cheesecake dessert liquorice cake cake tiramisu chocolate. Gummi bears candy canes cupcake. Apple pie
-                                sweet roll
-                                macaroon chocolate.</p>
+                            <p>Coming soon</p>
                         </div>
                     </div>
                 </div>
@@ -79,7 +80,7 @@
         </div>
     </section>
     <!-- Project -->
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <div class="projects-container">
                 <div class="section-heading">
@@ -87,24 +88,17 @@
                 </div>
                 <div class="projects-stack">
                     <div class="project-content">
-                        <div class="project-img"><img src="https://via.placeholder.com/100.png/09f/fffC/O https://placeholder.com/" alt=""></div>
+                        <div class="project-img"><a href="https://codepen.io/kaybee1jam/full/dybzByN" target="_blank"><img src="img/sweet_bakery.png" alt="Sweet Bakery website"></a></div>
                         <div class="stack-details">
-                            <h3 class="heading-small">Project 1</h3>
-                            <p>Cheesecake dessert liquorice cake cake tiramisu chocolate. Gummi bears candy canes cupcake. Apple pie sweet roll macaroon chocolate.</p>
+                            <h3 class="heading-small">Sweet Bakery Website</h3>
+                            <p>Simple baking weebiste built using HTML and CSS. Implemented some animation to the navigation links.</p>
                         </div>
                     </div>
                     <div class="project-content">
-                        <div class="project-img"><img src="https://via.placeholder.com/100.png/09f/fffC/O https://placeholder.com/" alt=""></div>
+                        <div class="project-img"><a href="https://bucket-list-kb.netlify.com/" target="_blank"><img src="img/bucket_list.png" alt="Bucket list website"></a></div>
                         <div class="stack-details">
-                            <h3 class="heading-small">Project 2</h3>
-                            <p>Cheesecake dessert liquorice cake cake tiramisu chocolate. Gummi bears candy canes cupcake. Apple pie sweet roll macaroon chocolate.</p>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-img"><img src="https://via.placeholder.com/100.png/09f/fffC/O https://placeholder.com/" alt=""></div>
-                        <div class="stack-details">
-                            <h3 class="heading-small">Project 3</h3>
-                            <p>Cheesecake dessert liquorice cake cake tiramisu chocolate. Gummi bears candy canes cupcake. Apple pie sweet roll macaroon chocolate.</p>
+                            <h3 class="heading-small">Bucket List Project</h3>
+                            <p>Bucket List is an application built for people to be able plan their goals and vaction in efficient way, as well as share those plans with friends and family. I Worked on the homepage using frontend technologies including HTML5, built with semantic code, and styled with CSS using LESS and a modular structure.</p>
                         </div>
                     </div>
                 </div>
@@ -112,7 +106,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="contact-bg"></div>
             <div class="contact-content">
